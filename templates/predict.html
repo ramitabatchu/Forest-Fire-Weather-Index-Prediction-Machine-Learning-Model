@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FWI Prediction</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class = 'container'>
+        <div class="column images">
+            <img src="https://imgs.mongabay.com/wp-content/uploads/sites/30/2022/06/29103726/1200px-Bandipur_fires_2019.jpg" alt="Forest Fire 1" sizes="100">
+            <img src="https://magazine.columbia.edu/sites/default/files/styles/wysiwyg_full_width_image/public/2018-09/Wild-fires.jpg?itok=J13NLG_k" alt="Forest Fire 2" sizes="100">
+            <img src="https://cdn.theatlantic.com/media/img/photo/2022/07/photos-wildfires-rage-across-southw/a01_1241970129/main_1500.jpg" alt="Forest Fire 3" sizes="100">
+            <img src="https://cdn.britannica.com/90/191790-050-092C8C2A/Wildfire-Stanislaus-National-Forest-California-2013.jpg" alt="Forest Fire 4" sizes="100">
+
+        </div>
+        <div>
+            <h2>FWI prediction</h2>
+            <form action="{{ url_for('predict_datapoint')}}" method="post">
+                <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br>
+                <input type="text" name="RH" placeholder="RH" required="required" /><br>
+                <input type="text" name="Ws" placeholder="Ws" required="required" /><br>
+                <input type="text" name="Rain" placeholder="Rain" required="required" /><br>
+                <input type="text" name="FFMC" placeholder="FFMC" required="required" /><br>
+                <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
+                <input type="text" name="ISI" placeholder="ISI" required="required" /><br>
+                <input type="text" name="Classes" placeholder="Classes" required="required" /><br>
+                <input type="text" name="Region" placeholder="Region" required="required" /><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+            <h2>The FWI prediction is {{result}}</h2>
+
+        </div>
+        <div class="column images">
+            <img src="https://img.freepik.com/free-photo/european-burning-forest-wallpaper_1409-6382.jpg" alt="Forest Fire 5" sizes="100">
+            <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SWBVYMQOLQI6ZOWKQ2YUJ7EKFU.jpg&w=1200" alt="Forest Fire 6" sizes="100">
+            <img src="https://media.istockphoto.com/id/1333314611/photo/massive-california-wild-fire-forcing-thousands-of-people-to-evacuate-their-homes-wildfires.jpg?s=612x612&w=0&k=20&c=BNKmR2g9sXsiXaSsGTtxOvdB_FV0N1bp0jQ1OpCMWMo=" alt="Forest Fire 7" sizes="100">
+            <img src="https://i0.wp.com/eos.org/wp-content/uploads/2024/07/wildfire.jpg?fit=1200%2C675&ssl=1" alt="Forest Fire 8" sizes="100">
+        </div>
+    </div>
+</body>
+</html>
