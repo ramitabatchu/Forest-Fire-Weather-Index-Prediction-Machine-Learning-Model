@@ -1,7 +1,7 @@
 # Forest Fire Weather Index Prediction
 
 ## Overview
-The Forest Fire Weather Index (FWI) Prediction project is a machine learning-based web application that predicts the Fire Weather Index using meteorological and environmental data. The goal is to provide a tool that helps assess fire risk levels based on key weather parameters.
+The Forest Fire Weather Index (FWI) Prediction project is a **machine learning-based web application** that predicts the Fire Weather Index using meteorological and environmental data. The goal is to provide a tool that helps assess fire risk levels based on key weather parameters.
 
 ## Problem Statement
 Forest fires are catastrophic events that can cause massive destruction. Predicting the Fire Weather Index (FWI) is crucial for early prevention and mitigation strategies. This project aims to develop an ML-based web application that accurately predicts FWI using supervised learning models.
@@ -89,7 +89,7 @@ python application.py
 ```
 
 ### Step 3: Open in Browser
-Visit: 'http://127.0.0.1:5000/'
+Visit: `http://127.0.0.1:5000/`
 
 ## Future Enhancements
 - Implement deep learning models for better accuracy.
@@ -102,8 +102,10 @@ Visit: 'http://127.0.0.1:5000/'
 
 
 ## Prediction Pages
+Input the following meteorological and environmental features
 ![Screenshot 2025-02-09 at 10 31 08 PM (2)](https://github.com/user-attachments/assets/c1819ced-d6fe-4c50-86fb-0b03be49f3a4)
 
+Predicts the Forest Fire Weather Index 
 ![Screenshot 2025-02-09 at 10 31 32 PM (2)](https://github.com/user-attachments/assets/2e632c70-fe03-419a-8e60-266b26ee9698)
 
 
