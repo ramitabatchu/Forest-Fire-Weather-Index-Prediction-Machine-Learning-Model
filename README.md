@@ -61,19 +61,19 @@ The dataset used for training the model consists of meteorological and environme
 ## Web Application
 The Flask-based web app provides an interactive UI for users to input weather parameters and get predictions.
 
-### Home Page ('index.html')
+### Home Page (`index.html`)
 - Displays project title and description.
 - Provides a button to navigate to the prediction page.
 - Contains background images related to forest fires.
 
-### Prediction Page ('home.html')
+### Prediction Page (`home.html`)
 - Accepts user inputs for meteorological parameters.
 - Displays the predicted Fire Weather Index.
 - Shows error messages in case of incorrect inputs.
 
-### Backend Logic ('application.py')
-- Loads pre-trained Ridge Regression model (ridge.pkl).
-- Loads StandardScaler (scaler.pkl) for data preprocessing.
+### Backend Logic (`application.py`)
+- Loads pre-trained Ridge Regression model (`ridge.pkl`).
+- Loads StandardScaler (`scaler.pkl`) for data preprocessing.
 - Handles form inputs and prediction requests.
 - Renders results on the home.html page.
 
@@ -96,4 +96,14 @@ Visit: 'http://127.0.0.1:5000/'
 - Integrate real-time weather data from APIs.
 - Improve UI/UX with enhanced visualizations.
 - Deploy the app to a cloud platform (AWS, Heroku, etc.)
+
+## Home Page
+![Screenshot 2025-02-09 at 10 30 55 PM (2)](https://github.com/user-attachments/assets/072521f7-96bf-48a6-8508-15583efc1b2e)
+
+
+## Prediction Pages
+![Screenshot 2025-02-09 at 10 31 08 PM (2)](https://github.com/user-attachments/assets/c1819ced-d6fe-4c50-86fb-0b03be49f3a4)
+
+![Screenshot 2025-02-09 at 10 31 32 PM (2)](https://github.com/user-attachments/assets/2e632c70-fe03-419a-8e60-266b26ee9698)
+
 
