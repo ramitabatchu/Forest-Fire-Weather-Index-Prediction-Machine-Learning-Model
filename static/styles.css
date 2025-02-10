@@ -43,7 +43,7 @@ body {
 }
 
 h1, h2 {
-    color: white;
+    color: #af5555;
 }
 
 p {
@@ -51,19 +51,25 @@ p {
 }
 
 form input {
-    width: 90%;
+    width: 75%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 3px solid #150303;
     border-radius: 5px;
     font-size: 1em;
+    background-color: #230505;
 }
+
+::placeholder {
+    color: #af5555;
+    opacity: 1;
+  }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
-    color: white;
+    color: #af5555;
     background-color: #230505;
     text-decoration: none;
     border-radius: 5px;
@@ -72,4 +78,17 @@ form input {
 
 .btn:hover {
     background-color: rgba(55, 25, 25, 0.665);
+}
+
+#title_home {
+    font-size: 30px;
+}
+
+#descrip_home {
+    font-size: 16px;
+    color: #af5555;
+}
+
+#title_predict{
+    font-size: 35px;
 }

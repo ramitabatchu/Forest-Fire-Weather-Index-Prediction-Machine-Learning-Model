@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pf
 from sklearn.preprocessing import StandardScaler
 
-application = Flask(__name__, static_folder='static')  # Serve static files
+application = Flask(__name__, static_folder='static')
 app = application
 
 # Load models
@@ -40,7 +40,7 @@ def predict_datapoint():
     
 @app.route('/predict')
 def show_predict_page():
-    return render_template("home.html", result=None)  # Ensures home.html loads on GET
+    return render_template("home.html", result=None)
 
 
 if __name__ == "__main__":
